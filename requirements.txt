@@ -1,0 +1,42 @@
+# Ultimate Vocal Remover 5 —— RTX 50 系列兼容版依赖
+# 适用 Python 3.13 / Windows x64
+#
+# 第一步：装 CUDA 12.8 版 PyTorch（RTX 50 系 = sm_120，必须用 cu128 及以上）
+#   pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+#
+# 第二步：装其余依赖
+#   pip install -r requirements.txt
+
+numpy>=2.0
+scipy>=1.13
+librosa>=0.10.2
+soundfile>=0.12
+audioread>=3.0
+soxr>=0.5
+resampy>=0.4
+samplerate>=0.2.4
+numba>=0.60
+pydub>=0.25
+audioop-lts>=0.2 ; python_version >= "3.13"
+matchering>=2.0.6
+onnx>=1.16
+onnx2pytorch>=0.6
+onnxruntime-gpu==1.24.4
+pytorch-lightning>=2.4
+torchmetrics>=1.4
+diffq>=0.2.4
+omegaconf>=2.3
+ml-collections>=1.0
+einops>=0.8
+julius>=0.2.7
+pyyaml>=6.0
+natsort>=8.0
+psutil>=6.0
+pyperclip>=1.9
+pyglet>=2.1
+screeninfo>=0.8
+kthread>=0.2.3
+wget>=3.2
+cryptography>=42
+Pillow>=10
+tqdm>=4.66

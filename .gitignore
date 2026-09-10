@@ -1,0 +1,37 @@
+# ---------------- Python ----------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---------------- UVR 运行时生成 ----------------
+data.pkl
+gui_data/ui_lang.txt
+numba-cache/
+ensemble_temps/
+temp_sample_clips/
+saved_output/
+*.log
+*.spec
+
+# ---------------- 模型权重 ----------------
+# 上游只跟踪 lib_v5/mixer.ckpt 和 models/VR_Models/UVR-DeNoise-Lite.pth，
+# 其余大模型一律不入库（用 GitHub Release 或 Git LFS 分发）
+*.ckpt
+!lib_v5/mixer.ckpt
+*.pth
+!models/VR_Models/UVR-DeNoise-Lite.pth
+*.onnx
+*.th
+*.pt
+*.bin
+*.safetensors
+*.h5
+*.tflite
+
+# ---------------- 构建产物 ----------------
+dist/
+build/
+_uvr5_pkg/
