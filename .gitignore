@@ -35,3 +35,8 @@ saved_output/
 dist/
 build/
 _uvr5_pkg/
+
+# ---------------- Release 资产（只放 Release，不进源码树） ----------------
+SHA256SUMS.txt
+HOW-TO-MERGE.txt
+UVR5-*-Setup.exe.0*
