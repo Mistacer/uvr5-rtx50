@@ -8,7 +8,8 @@
 
 ## 直接下载安装包
 
-到 [Releases](../../releases) 页面下载 `UVR5-5.6.0-Setup.exe`（约 2.2 GB），双击安装即可。
+到 [Releases](../../releases) 页面下载全部 **2 个分卷**（`UVR5-5.6.0-Setup.exe.001` + `.002`，合计约 2.2 GB），
+放到同一个文件夹里，按 `HOW-TO-MERGE.txt` 里的命令合并成 `UVR5-5.6.0-Setup.exe`（约 2.2 GB），双击安装即可。
 
 - **核心修复**：官方版内置的 torch 是 CUDA 11 构建（最高只到 `sm_90`），在 RTX 50 系上会卡在推理第一步。
   本版本换成 **PyTorch 2.11 + CUDA 12.8**，包含 `sm_120` kernel。

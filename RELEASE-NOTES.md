@@ -31,12 +31,13 @@
 
 | 文件 | 大小 | 说明 |
 |---|---|---|
-| `UVR5-5.6.0-Setup.exe` | 约 2.2 GB | 完整安装包：便携 Python 3.13 + torch 2.11 CUDA 12.8 + 常用模型 + 中文界面 |
-| `SHA256SUMS.txt` | — | 安装包校验值 |
+| `UVR5-5.6.0-Setup.exe.001` / `.002` | 约 1.1 GB × 2 | 完整安装包分卷：便携 Python 3.13 + torch 2.11 CUDA 12.8 + 常用模型 + 中文界面 |
+| `HOW-TO-MERGE.txt` | — | 分卷合并方法（cmd / PowerShell 两种写法） |
+| `SHA256SUMS.txt` | — | 合并后安装包的校验值 |
 | 源码 | — | 本仓库 `main` 分支（不含模型权重） |
 
-> **关于分卷**：GitHub 单个 Release 资产上限 2 GB。如果安装包被拆成 `UVR5-5.6.0-Setup.exe.001` / `.002` 多个分卷，
-> 请把分卷下载到同一个文件夹，按 `合并方法.txt` 合并，再用 `SHA256SUMS.txt` 校验。
+> **关于分卷**：GitHub 单个 Release 资产上限 2 GB，所以安装包被拆成 `UVR5-5.6.0-Setup.exe.001` / `.002` 两个分卷。
+> 请把分卷下载到同一个文件夹，按 `HOW-TO-MERGE.txt` 合并，再用 `SHA256SUMS.txt` 校验。
 
 ---
 
